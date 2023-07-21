@@ -54,7 +54,18 @@ services:
       ACCEPT_EULA: "Y"
     secrets:
       - db_password
-
+  
+  mongo_bd:
+    container_name: mongo-db
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD_FILE: /run/secrets/db_password
+    secrets:
+      - db_password
+    ports:
+      - 27017:27017
 
 secrets:
   db_password:

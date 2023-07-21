@@ -29,7 +29,15 @@ services:
     ports:
       - 3306:3306
 
-
+ postgres_db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_password
+    secrets:
+      - db_password
+    ports:
+      - 5432:5432
 
 secrets:
   db_password:

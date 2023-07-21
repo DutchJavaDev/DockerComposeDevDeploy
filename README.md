@@ -3,7 +3,9 @@ Basic configuration for a new server that will have programs running via docker
 
 
 ### Access via web with nginx.
-
+## Urls
+Uptime Kuma = /
+Adminer = /dbadmin
 
 # Dashboard
 Uptime Kuma will be the dashboard to monitor all programs via pings etc.

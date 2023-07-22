@@ -18,19 +18,30 @@ Uptime Kuma will be the dashboard to monitor all programs via pings etc.
 To have access to the databeses, create a db_password.txt file and store the password in there
 
 ### Adminer 
-Easy connect to databases
+Easy connect to the Mysql and Postgres databases
+Adminer does not support SQL server, MongoDb and Redis 
+
+Use other tools to connecto to those like MongoDb Compas etc... google :)
 
 ### Mysql database
-Normal access
+Normal access 
+
+User: root
 
 ### Posgres database
-Normal access
+Normal access 
+
+User: postgres
 
 ### SQL database
-Normal access
+Normal access 
+
+User: sa
 
 ### MongoDB
-Normal access
+Normal access 
+
+User: root
 
 ### redis DB
 Normal access

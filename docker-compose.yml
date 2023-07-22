@@ -30,7 +30,7 @@ services:
     secrets:
       - db_password
     ports:
-      - "3306:3306"
+      - "3306"
  
   postgres_db:
     container_name: postgres-db
@@ -66,6 +66,11 @@ services:
       - db_password
     ports:
       - "27017:27017"
+
+  redis_db:
+    container_name: redis-db
+    image: redis
+    restart: always
 
 secrets:
   db_password:

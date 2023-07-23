@@ -1,24 +1,24 @@
 version: '3.9'
 services:
-
-  uptime-kuma:
+  
+ uptime-kuma:
     container_name: main-dashboard
     image: louislam/uptime-kuma:1
     container_name: uptime-kuma
     volumes:
       - /compose_data/uptime-kuma-data:/app/data
     ports: 
-      - "127.0.0.1:3001:3001"  # <Host Port>:<Container Port>
+      - "3001:3001"  # <Host Port>:<Container Port>
     restart: always
 
-  adminer:
+ adminer:
     container_name: db-panel
     image: adminer
     restart: always
     ports:
       - "127.0.0.1:4001:8080"
  
-  mysql_db:
+ mysql_db:
     container_name: mysql-db
     image: mysql
     # NOTE: use of "mysql_native_password" is not recommended: https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password
@@ -32,7 +32,7 @@ services:
     ports:
       - "3306"
  
-  postgres_db:
+ postgres_db:
     container_name: postgres-db
     image: postgres
     restart: always
@@ -43,7 +43,7 @@ services:
     ports:
       - "5432:5432"
 
-  sql_db:
+ sql_db:
     container_name: sql-server-db
     image: mcr.microsoft.com/mssql/server
     restart: always
@@ -55,7 +55,7 @@ services:
     secrets:
       - db_password
   
-  mongo_bd:
+ mongo_db:
     container_name: mongo-db
     image: mongo
     restart: always
@@ -67,7 +67,7 @@ services:
     ports:
       - "27017:27017"
 
-  redis_db:
+ redis_db:
     container_name: redis-db
     image: redis
     restart: always

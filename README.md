@@ -1,5 +1,7 @@
 # DockerComposeDevDeploy
 Basic configuration for a new server that will have programs running via docker
+![image](https://github.com/DutchJavaDev/DockerComposeDevDeploy/assets/19773367/7722925b-7e3f-4882-8bd5-204cbfc66c86)
+
 
 ### Access via web with nginx. (nginx setup not included)
 ## Urls

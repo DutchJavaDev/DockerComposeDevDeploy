@@ -1,6 +1,9 @@
 # DockerComposeDevDeploy
-Basic configuration for a new server that will have programs running via docker
-![image](https://github.com/DutchJavaDev/DockerComposeDevDeploy/assets/19773367/7722925b-7e3f-4882-8bd5-204cbfc66c86)
+Basic configuration for a new server that will have programs running via docker 
+
+[Live example (link)](http://bamdevserver.nl:3001/status/dockercomposedevdeploy)
+![image](https://github.com/DutchJavaDev/DockerComposeDevDeploy/assets/19773367/e780aa5a-8366-4c1f-9c8c-0f67e9a7987f)
+
 
 
 ### Access via web with nginx. (nginx setup not included)
